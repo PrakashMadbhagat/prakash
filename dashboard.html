@@ -1,0 +1,722 @@
+<!doctype html>               
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- title -->
+		<title>Argon Dashboard 2</title>
+		<!-- favicon icon -->
+		<link href="images/favicon.png" rel="icon" type="icon/favicon">
+		<!-- bootstrap css -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!-- custom css -->
+		<link href="css/dark.css" rel="stylesheet" type="text/css" id="caseswithcer">
+		<!-- fonts -->
+		<link href="css/fonts.css" rel="stylesheet" type="text/css">
+		<!-- fontawsome -->
+		<link href="css/all.css" rel="stylesheet" type="text/css">
+		<!-- fontawsome-icon -->
+		<link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css">
+		<!-- media-query -->
+		<link href="css/media.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="setting">
+			<a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+				<i class="fa-solid fa-gear"></i>
+			</a>
+		</div>
+		<!-- <div class="bg-color position-relative"></div> -->
+		<div class="page-wrapper">
+			<div class="back">				
+			<div class="pagebody-wrapper d-flex">
+				<div class="slidebar my-3 ms-4">
+					<div class="container">
+						<div class="row">
+							<div class="logo-img">
+								<a href="#">
+									<img src="images/logo.png" width="30px">
+									<span>Argon Dashboard2</span>
+								</a>
+								<hr class="hr">
+							</div>
+							<div class="slidebar-count p-0">
+								<ul class="list-unstyled">
+									<li>
+										<a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="computer"><path d="M29,5H3A3,3,0,0,0,0,8V24a3,3,0,0,0,3,3H13v3H11a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2H19V27H29a3,3,0,0,0,3-3V8A3,3,0,0,0,29,5ZM17,30H15V27h2Zm13-6a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V8A1,1,0,0,1,3,7H29a1,1,0,0,1,1,1Z" fill="#595bd4" class="color000000 svgShape"></path></svg>
+											<span>Dashboard</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="Calendar"><path d="M5 4.5a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 1 0v2a.5.5 0 0 1-.5.5zM11 4.5a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 1 0v2a.5.5 0 0 1-.5.5z" fill="#FC7541" class="color000000 svgShape"></path><path d="M13 14.5H3c-.827 0-1.5-.673-1.5-1.5V4c0-.827.673-1.5 1.5-1.5h10c.827 0 1.5.673 1.5 1.5v9c0 .827-.673 1.5-1.5 1.5zM3 3.5a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H3z" fill="#FC7541" class="color000000 svgShape"></path><path d="M14 6.5H2a.5.5 0 0 1 0-1h12a.5.5 0 0 1 0 1zM5.5 7.5h1v1h-1zM7.5 7.5h1v1h-1zM9.5 7.5h1v1h-1zM11.5 7.5h1v1h-1zM3.5 9.5h1v1h-1zM5.5 9.5h1v1h-1zM7.5 9.5h1v1h-1zM9.5 9.5h1v1h-1zM11.5 9.5h1v1h-1zM3.5 11.5h1v1h-1zM5.5 11.5h1v1h-1zM7.5 11.5h1v1h-1z" fill="#FC7541" class="color000000 svgShape"></path></svg>
+											<span>Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="Bill"><g style="line-height:125%" fill="#34a853" class="color000000 svgShape"><path style="text-indent:0;text-align:start;line-height:125%;text-transform:none;block-progression:tb;marker:none;-inkscape-font-specification:Sans" d="M4 1h10.5C15.91 1 17 2.032 17 3.313V5h-4.813a.501.501 0 0 0-.062 0H12c-1.653 0-3 1.347-3 3v1h-.438C7.702 9 7 9.7 7 10.563v12.843C7 24.268 7.7 25 8.563 25H9v1a.5.5 0 0 0 0 .125A1.989 1.989 0 0 1 7 28c-1.117 0-2-.883-2-2V3.312C5 2.402 4.617 1.595 4 1zm8 5c.88 0 1.313.253 1.594.625.28.372.393.907.406 1.375v.25a.501.501 0 0 0 0 .063V9h-4V8c0-1.117.883-2 2-2zm2.344 0h2.969a.507.507 0 0 0 .187 0C18.91 6 20 7.032 20 8.313V31h-5v-4.906a.5.5 0 0 0 0-.032V8.313a.506.506 0 0 0 0-.093V8a.5.5 0 0 0 0-.031c-.016-.602-.163-1.327-.625-1.938-.009-.011-.022-.02-.031-.031zM16 9.5v1h2v-1zm-7.438.5H14v1H8v-.438c0-.325.237-.562.563-.562zM21 10h9.437c.326 0 .563.237.563.563V11H21zm-5 1.5v1h3v-1zM8 12h6v2H8zm13 0h10v2H21zm-5 1.5v1h2v-1zM8 15h6v2H9v3h5v2h-1v1h1v1H8.562C8.238 24 8 23.731 8 23.406zm13 0h10v8.406c0 .325-.237.594-.563.594H21v-1h3v-1h-3zm-5 .5v1h1v-1zm8.313.5c-1.28.1-2.317 1.217-2.313 2.5 0 1.35 1.15 2.5 2.5 2.5.552 0 1.1-.193 1.531-.531.421.32.915.531 1.469.531 1.35 0 2.5-1.15 2.5-2.5S28.85 16 27.5 16c-.552 0-1.049.212-1.469.531a2.498 2.498 0 0 0-1.5-.531H24.5zm.062 1h.125c.3 0 .568.158.813.344-.144.26-.24.543-.282.843-.028.103-.03.204-.031.313 0 .11.003.21.031.313.04.299.142.584.282.843-.245.186-.513.343-.813.344-.744 0-1.5-.756-1.5-1.5-.002-.711.666-1.444 1.375-1.5zm3.125 0c.744 0 1.5.756 1.5 1.5s-.756 1.5-1.5 1.5c-.558 0-1.127-.411-1.375-.938-.022-.052-.046-.101-.063-.156-.013-.039-.021-.085-.03-.125A1.473 1.473 0 0 1 26 18.5c0-.744.756-1.5 1.5-1.5zm-11.5.5v1h3v-1zm-6 .5h4v1h-4zm6 1.5v1h2v-1zM9 22v1h3v-1zm1 3h4v1.063a.501.501 0 0 0 0 .062V28H9.219a2.948 2.948 0 0 0 .75-1.813.5.5 0 0 0 .031-.062v-.031a.5.5 0 0 0 0-.032V26z" color="#000" font-family="sans-serif" font-weight="400" letter-spacing="0" overflow="visible" word-spacing="0" fill="#34a853" class="color000000 svgShape"></path></g></svg>
+											<span>Billing</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Cube"><g data-name="Layer 2" fill="#11B6EF" class="color000000 svgShape"><g data-name="cube" fill="#11B6EF" class="color000000 svgShape"><rect width="24" height="24" opacity="0" fill="#11B6EF" class="color000000 svgShape"></rect><path d="M11.25 11.83L3 8.36v7.73a1.69 1.69 0 0 0 1 1.52L11.19 21h.06zM12 10.5l8.51-3.57a1.62 1.62 0 0 0-.51-.38l-7.2-3.37a1.87 1.87 0 0 0-1.6 0L4 6.55a1.62 1.62 0 0 0-.51.38zM12.75 11.83V21h.05l7.2-3.39a1.69 1.69 0 0 0 1-1.51V8.36z" fill="#11B6EF" class="color000000 svgShape"></path></g></g></svg>
+											<span>Virtual Reality</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="World"><path fill="#F55440" fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-3.07 4a8.038 8.038 0 0 1-3.131 3.042A11.786 11.786 0 0 0 17.354 16h1.576Zm-1.084-2c.098-.625.154-1.291.154-2 0-.709-.056-1.375-.154-2h1.902c.165.64.252 1.31.252 2s-.087 1.36-.252 2h-1.902Zm-2.007 0c.103-.627.161-1.294.161-2s-.058-1.373-.16-2H13v4h2.84ZM13 16h2.332a12.233 12.233 0 0 1-2.263 3.93 8.254 8.254 0 0 1-.069.008V16Zm-2-2v-4H8.16c-.102.627-.16 1.294-.16 2s.058 1.373.16 2H11Zm-2.332 2H11v3.938a8.254 8.254 0 0 1-.07-.009A12.231 12.231 0 0 1 8.668 16Zm-2.514-2A12.842 12.842 0 0 1 6 12c0-.709.056-1.375.154-2H4.252A8.015 8.015 0 0 0 4 12c0 .69.088 1.36.252 2h1.902ZM5.07 16h1.576c.424 1.248 1 2.262 1.555 3.042A8.038 8.038 0 0 1 5.071 16Zm13.86-8h-1.576c-.424-1.248-1-2.262-1.555-3.042A8.038 8.038 0 0 1 18.929 8ZM13 8h2.332a12.234 12.234 0 0 0-2.263-3.93A8.687 8.687 0 0 0 13 4.063V8Zm-2-3.938V8H8.668a12.232 12.232 0 0 1 2.263-3.93L11 4.063Zm-2.799.896A11.786 11.786 0 0 0 6.646 8H5.07a8.038 8.038 0 0 1 3.131-3.042Z" clip-rule="evenodd" class="color000000 svgShape"></path></svg>
+											<span>RTL</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="m-0">ACCOUNT PAGES</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="person"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z"></path></svg>
+											<span>Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="sign-in.html">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="signin"><path d="M18.01 27h-4c-6.34 0-11.5 5.16-11.5 11.5v3c0 .83.67 1.5 1.5 1.5h24c.83 0 1.5-.67 1.5-1.5v-3c0-6.34-5.16-11.5-11.5-11.5zm8.5 13h-21v-1.5c0-4.69 3.81-8.5 8.5-8.5h4c4.69 0 8.5 3.81 8.5 8.5V40zm-10.5-14c5.79 0 10.5-4.71 10.5-10.5S21.8 5 16.01 5 5.51 9.71 5.51 15.5 10.22 26 16.01 26zm0-18c4.14 0 7.5 3.36 7.5 7.5s-3.36 7.5-7.5 7.5-7.5-3.36-7.5-7.5S11.87 8 16.01 8zM45.4 23.97c0-.01 0-.03-.01-.04v-.01c-.07-.17-.17-.31-.29-.44a.219.219 0 0 1-.03-.05l-4-4c-.59-.59-1.54-.59-2.12 0s-.59 1.54 0 2.12L40.38 23H31c-.83 0-1.5.67-1.5 1.5S30.17 26 31 26h9.38l-1.44 1.44a1.49 1.49 0 0 0 0 2.12c.29.29.68.44 1.06.44s.77-.15 1.06-.44l4-4c.13-.13.22-.28.3-.44.02-.05.04-.1.05-.15.04-.12.06-.24.07-.37 0-.05.01-.1.01-.15 0-.17-.03-.32-.09-.48z" fill="#FC7541" class="color000000 svgShape"></path></svg>
+											<span>Sign In</span>
+										</a>
+									</li>
+									<li>
+										<a href="sign-up.html">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="AddUser"><path d="M6.555 7.116a6.623 6.623 0 0 0 6.616 6.616c3.648 0 6.616-2.967 6.616-6.616S16.82.5 13.171.5a6.623 6.623 0 0 0-6.616 6.616zM13.17 3.5c1.994 0 3.616 1.622 3.616 3.616s-1.622 3.616-3.616 3.616S9.555 9.11 9.555 7.116 11.177 3.5 13.17 3.5zM1.67 26v2c0 1.93 1.57 3.5 3.5 3.5h16c1.93 0 3.5-1.57 3.5-3.5v-2c0-6.34-5.159-11.5-11.5-11.5S1.67 19.66 1.67 26zm11.5-8.5c4.687 0 8.5 3.813 8.5 8.5v2c0 .275-.224.5-.5.5h-16a.5.5 0 0 1-.5-.5v-2c0-4.687 3.813-8.5 8.5-8.5zm14.042-2.151v-1.617h1.616a1.5 1.5 0 0 0 0-3h-1.616V9.116a1.5 1.5 0 0 0-3 0v1.616h-1.615a1.5 1.5 0 0 0 0 3h1.615v1.617a1.5 1.5 0 0 0 3 0z" fill="#11B6EF" class="color000000 svgShape"></path></svg>
+											<span>Sign Up</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="slidenav-footer p-0">
+								<div class="card shadow-none px-3">
+									<img src="images/icon-documentation.svg" width="109px">  
+									<div class="card-body">
+										<h6>Need help?</h6>
+										<p class="m-0">Please check our docs</p>
+									</div>
+									<a href="#" class="btn btn-dark">Documentation</a>
+									<a href="#" class="btn bg-gradient-primary text-white">Upgrade to pro</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-body w-100 p-4 pb-0">
+					<div class="row">
+						<div class="d-flex">
+							<div class="col-12">
+								<nav class="navbar navbar-expand-lg p-0 pb-4">
+									<div class="container-fluid">
+										<nav aria-label="breadcrumb">
+											<ol class="breadcrumb m-0 mb-1">
+												<li class="breadcrumb-item "><a href="#" class="text-white">Pages</a></li>
+												<li class="breadcrumb-item text-white" aria-current="page">Dashboard</li>
+											</ol>
+											<h6 class="text-white fw-bolder">Dashboard</h6>
+										</nav>
+											<div class="d-flex">
+												<form class="form-control me-2" role="search">
+													<span class="me-2">
+														<i class="bi bi-search"></i>
+													</span>
+													<input type="search" placeholder="Type here..." aria-label="Search">
+												</form>
+												<ul class="nav d-flex align-items-center">
+													<li class="nav-item">
+														<a class="nav-link text-white px-2 p-0" aria-current="page" href="#"><i class="fa-solid fa-user pe-2"></i>Sign In</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link text-white px-2 p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" href="#">
+															<i class="fa-solid fa-gear"></i>
+														</a>
+													</li>
+													<li class="nav-item bars">
+														<a class="nav-link text-white px-2 p-0"  data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample" href="#offcanvasExample">
+															<i class="fa-solid fa-bars"></i>
+														</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link text-white px-2 p-0">
+															<i class="fa-solid fa-bell"></i>
+														</a>
+													</li>	
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="off offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+										<button type="button" class="btn btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+										<div class="slidebars my-3 ms-4">
+											<div class="container">
+												<div class="row">
+													<div class="logo-img">
+														<a href="#">
+															<img src="images/logo.png" width="30px">
+															<span>Argon Dashboard2</span>
+														</a>
+													</div>
+													<div class="slidebar-count p-0">
+														<ul class="list-unstyled">
+															<li>
+																<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="computer"><path d="M29,5H3A3,3,0,0,0,0,8V24a3,3,0,0,0,3,3H13v3H11a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2H19V27H29a3,3,0,0,0,3-3V8A3,3,0,0,0,29,5ZM17,30H15V27h2Zm13-6a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V8A1,1,0,0,1,3,7H29a1,1,0,0,1,1,1Z" fill="#595bd4" class="color000000 svgShape"></path></svg>
+																	<span>Dashboard</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="Calendar"><path d="M5 4.5a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 1 0v2a.5.5 0 0 1-.5.5zM11 4.5a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 1 0v2a.5.5 0 0 1-.5.5z" fill="#FC7541" class="color000000 svgShape"></path><path d="M13 14.5H3c-.827 0-1.5-.673-1.5-1.5V4c0-.827.673-1.5 1.5-1.5h10c.827 0 1.5.673 1.5 1.5v9c0 .827-.673 1.5-1.5 1.5zM3 3.5a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H3z" fill="#FC7541" class="color000000 svgShape"></path><path d="M14 6.5H2a.5.5 0 0 1 0-1h12a.5.5 0 0 1 0 1zM5.5 7.5h1v1h-1zM7.5 7.5h1v1h-1zM9.5 7.5h1v1h-1zM11.5 7.5h1v1h-1zM3.5 9.5h1v1h-1zM5.5 9.5h1v1h-1zM7.5 9.5h1v1h-1zM9.5 9.5h1v1h-1zM11.5 9.5h1v1h-1zM3.5 11.5h1v1h-1zM5.5 11.5h1v1h-1zM7.5 11.5h1v1h-1z" fill="#FC7541" class="color000000 svgShape"></path></svg>
+																	<span>Tables</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="Bill"><g style="line-height:125%" fill="#34a853" class="color000000 svgShape"><path style="text-indent:0;text-align:start;line-height:125%;text-transform:none;block-progression:tb;marker:none;-inkscape-font-specification:Sans" d="M4 1h10.5C15.91 1 17 2.032 17 3.313V5h-4.813a.501.501 0 0 0-.062 0H12c-1.653 0-3 1.347-3 3v1h-.438C7.702 9 7 9.7 7 10.563v12.843C7 24.268 7.7 25 8.563 25H9v1a.5.5 0 0 0 0 .125A1.989 1.989 0 0 1 7 28c-1.117 0-2-.883-2-2V3.312C5 2.402 4.617 1.595 4 1zm8 5c.88 0 1.313.253 1.594.625.28.372.393.907.406 1.375v.25a.501.501 0 0 0 0 .063V9h-4V8c0-1.117.883-2 2-2zm2.344 0h2.969a.507.507 0 0 0 .187 0C18.91 6 20 7.032 20 8.313V31h-5v-4.906a.5.5 0 0 0 0-.032V8.313a.506.506 0 0 0 0-.093V8a.5.5 0 0 0 0-.031c-.016-.602-.163-1.327-.625-1.938-.009-.011-.022-.02-.031-.031zM16 9.5v1h2v-1zm-7.438.5H14v1H8v-.438c0-.325.237-.562.563-.562zM21 10h9.437c.326 0 .563.237.563.563V11H21zm-5 1.5v1h3v-1zM8 12h6v2H8zm13 0h10v2H21zm-5 1.5v1h2v-1zM8 15h6v2H9v3h5v2h-1v1h1v1H8.562C8.238 24 8 23.731 8 23.406zm13 0h10v8.406c0 .325-.237.594-.563.594H21v-1h3v-1h-3zm-5 .5v1h1v-1zm8.313.5c-1.28.1-2.317 1.217-2.313 2.5 0 1.35 1.15 2.5 2.5 2.5.552 0 1.1-.193 1.531-.531.421.32.915.531 1.469.531 1.35 0 2.5-1.15 2.5-2.5S28.85 16 27.5 16c-.552 0-1.049.212-1.469.531a2.498 2.498 0 0 0-1.5-.531H24.5zm.062 1h.125c.3 0 .568.158.813.344-.144.26-.24.543-.282.843-.028.103-.03.204-.031.313 0 .11.003.21.031.313.04.299.142.584.282.843-.245.186-.513.343-.813.344-.744 0-1.5-.756-1.5-1.5-.002-.711.666-1.444 1.375-1.5zm3.125 0c.744 0 1.5.756 1.5 1.5s-.756 1.5-1.5 1.5c-.558 0-1.127-.411-1.375-.938-.022-.052-.046-.101-.063-.156-.013-.039-.021-.085-.03-.125A1.473 1.473 0 0 1 26 18.5c0-.744.756-1.5 1.5-1.5zm-11.5.5v1h3v-1zm-6 .5h4v1h-4zm6 1.5v1h2v-1zM9 22v1h3v-1zm1 3h4v1.063a.501.501 0 0 0 0 .062V28H9.219a2.948 2.948 0 0 0 .75-1.813.5.5 0 0 0 .031-.062v-.031a.5.5 0 0 0 0-.032V26z" color="#000" font-family="sans-serif" font-weight="400" letter-spacing="0" overflow="visible" word-spacing="0" fill="#34a853" class="color000000 svgShape"></path></g></svg>
+																	<span>Billing</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Cube"><g data-name="Layer 2" fill="#11B6EF" class="color000000 svgShape"><g data-name="cube" fill="#11B6EF" class="color000000 svgShape"><rect width="24" height="24" opacity="0" fill="#11B6EF" class="color000000 svgShape"></rect><path d="M11.25 11.83L3 8.36v7.73a1.69 1.69 0 0 0 1 1.52L11.19 21h.06zM12 10.5l8.51-3.57a1.62 1.62 0 0 0-.51-.38l-7.2-3.37a1.87 1.87 0 0 0-1.6 0L4 6.55a1.62 1.62 0 0 0-.51.38zM12.75 11.83V21h.05l7.2-3.39a1.69 1.69 0 0 0 1-1.51V8.36z" fill="#11B6EF" class="color000000 svgShape"></path></g></g></svg>
+																	<span>Virtual Reality</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="World"><path fill="#F55440" fill-rule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-3.07 4a8.038 8.038 0 0 1-3.131 3.042A11.786 11.786 0 0 0 17.354 16h1.576Zm-1.084-2c.098-.625.154-1.291.154-2 0-.709-.056-1.375-.154-2h1.902c.165.64.252 1.31.252 2s-.087 1.36-.252 2h-1.902Zm-2.007 0c.103-.627.161-1.294.161-2s-.058-1.373-.16-2H13v4h2.84ZM13 16h2.332a12.233 12.233 0 0 1-2.263 3.93 8.254 8.254 0 0 1-.069.008V16Zm-2-2v-4H8.16c-.102.627-.16 1.294-.16 2s.058 1.373.16 2H11Zm-2.332 2H11v3.938a8.254 8.254 0 0 1-.07-.009A12.231 12.231 0 0 1 8.668 16Zm-2.514-2A12.842 12.842 0 0 1 6 12c0-.709.056-1.375.154-2H4.252A8.015 8.015 0 0 0 4 12c0 .69.088 1.36.252 2h1.902ZM5.07 16h1.576c.424 1.248 1 2.262 1.555 3.042A8.038 8.038 0 0 1 5.071 16Zm13.86-8h-1.576c-.424-1.248-1-2.262-1.555-3.042A8.038 8.038 0 0 1 18.929 8ZM13 8h2.332a12.234 12.234 0 0 0-2.263-3.93A8.687 8.687 0 0 0 13 4.063V8Zm-2-3.938V8H8.668a12.232 12.232 0 0 1 2.263-3.93L11 4.063Zm-2.799.896A11.786 11.786 0 0 0 6.646 8H5.07a8.038 8.038 0 0 1 3.131-3.042Z" clip-rule="evenodd" class="color000000 svgShape"></path></svg>
+																	<span>RTL</span>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<p class="m-0">ACCOUNT PAGES</p>
+																</a>
+															</li>
+															<li>
+																<a href="#">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="person"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v1c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-1c0-2.66-5.33-4-8-4z"></path></svg>
+																	<span>Profile</span>
+																</a>
+															</li>
+															<li>
+																<a href="sign-in.html">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="signin"><path d="M18.01 27h-4c-6.34 0-11.5 5.16-11.5 11.5v3c0 .83.67 1.5 1.5 1.5h24c.83 0 1.5-.67 1.5-1.5v-3c0-6.34-5.16-11.5-11.5-11.5zm8.5 13h-21v-1.5c0-4.69 3.81-8.5 8.5-8.5h4c4.69 0 8.5 3.81 8.5 8.5V40zm-10.5-14c5.79 0 10.5-4.71 10.5-10.5S21.8 5 16.01 5 5.51 9.71 5.51 15.5 10.22 26 16.01 26zm0-18c4.14 0 7.5 3.36 7.5 7.5s-3.36 7.5-7.5 7.5-7.5-3.36-7.5-7.5S11.87 8 16.01 8zM45.4 23.97c0-.01 0-.03-.01-.04v-.01c-.07-.17-.17-.31-.29-.44a.219.219 0 0 1-.03-.05l-4-4c-.59-.59-1.54-.59-2.12 0s-.59 1.54 0 2.12L40.38 23H31c-.83 0-1.5.67-1.5 1.5S30.17 26 31 26h9.38l-1.44 1.44a1.49 1.49 0 0 0 0 2.12c.29.29.68.44 1.06.44s.77-.15 1.06-.44l4-4c.13-.13.22-.28.3-.44.02-.05.04-.1.05-.15.04-.12.06-.24.07-.37 0-.05.01-.1.01-.15 0-.17-.03-.32-.09-.48z" fill="#FC7541" class="color000000 svgShape"></path></svg>
+																	<span>Sign In</span>
+																</a>
+															</li>
+															<li>
+																<a href="sign-up.html">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="AddUser"><path d="M6.555 7.116a6.623 6.623 0 0 0 6.616 6.616c3.648 0 6.616-2.967 6.616-6.616S16.82.5 13.171.5a6.623 6.623 0 0 0-6.616 6.616zM13.17 3.5c1.994 0 3.616 1.622 3.616 3.616s-1.622 3.616-3.616 3.616S9.555 9.11 9.555 7.116 11.177 3.5 13.17 3.5zM1.67 26v2c0 1.93 1.57 3.5 3.5 3.5h16c1.93 0 3.5-1.57 3.5-3.5v-2c0-6.34-5.159-11.5-11.5-11.5S1.67 19.66 1.67 26zm11.5-8.5c4.687 0 8.5 3.813 8.5 8.5v2c0 .275-.224.5-.5.5h-16a.5.5 0 0 1-.5-.5v-2c0-4.687 3.813-8.5 8.5-8.5zm14.042-2.151v-1.617h1.616a1.5 1.5 0 0 0 0-3h-1.616V9.116a1.5 1.5 0 0 0-3 0v1.616h-1.615a1.5 1.5 0 0 0 0 3h1.615v1.617a1.5 1.5 0 0 0 3 0z" fill="#11B6EF" class="color000000 svgShape"></path></svg>
+																	<span>Sign Up</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+													<div class="slidenav-footer p-0">
+														<div class="card shadow-none px-3">
+															<img src="images/icon-documentation.svg" width="109px">  
+															<div class="card-body">
+																<h6>Need help?</h6>
+																<p class="m-0">Please check our docs</p>
+															</div>
+															<a href="#" class="btn btn-dark">Documentation</a>
+															<a href="#" class="btn bg-gradient-primary text-white">Upgrade to pro</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- offcanvas-->
+									<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+										<div class="offcanvas-header">
+											<div class="mb-3">
+												<h5 class="offcanvas-title" id="offcanvasRightLabel">Argon Configurator</h5>
+												<span>See our dashboard options</span>
+											</div>
+											<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+										</div>
+										<div class="offcanvas-body">
+											<div class="colors">
+												<h6>Slidebar Color</h6>
+												<a href="#" class="d-flex p-0 my-2 pb-3">
+													<div class="bd bg-1 me-2"></div>
+													<div class="bd bg-dark me-2"></div>
+													<div class="bd bg-5 me-2"></div>
+													<div class="bd bg-3 me-2"></div>
+													<div class="bd bg-4 me-2"></div>
+													<div class="bd bg-2 me-2"></div>									
+												</a>
+											</div>
+											<div class="sidenav">
+												<h6 class="m-0">Sidenav Type</h6>
+												<p class="mb-3">Choose between 2 different sidenav types.</p>
+												<div class="d-flex sidenav-switch">
+													<a href="javascript:void(0);" class="btn bg-light mb-2 me-2 w-50" data-path="css/dark.css">
+														<span>White</span>
+													</a>
+													<a href="javascript:void(0);" class="btn bg-d mb-2 w-50" data-path="css/dark1.css">
+														<span>Dark</span>
+													</a>
+												</div>
+											</div>
+											<div class="nav d-flex my-3 justify-content-between">
+												<h6 class="mb-0">Navbar Fixed</h6>
+												<div>
+													<input class="form-check-input mt-0 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
+												</div>
+											</div>
+											<hr class="hr mb-4">
+											<div class="nav d-flex mt-2 mb-5 justify-content-between">
+												<h6 class="mb-0">Light / Dark</h6>
+												<div>
+													<input class="form-check-input mt-0 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
+												</div>
+											</div>
+											<a href="#" class="btn bg-dark text-white w-100 mb-3">Free Download</a>
+											<a href="#" class="btn text-dark border border-1 border-dark w-100 mb-3">View documentation</a>
+											<div class="text-center">
+												<div class="widget">
+													<a href="#"><svg xmlns="http://www.w3.org/2000/svg" id="Star" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><path d="M20.953 26.489c-.327 0-.656-.079-.959-.238l-5.466-2.875-5.521 2.874a2.044 2.044 0 0 1-2.169-.157 2.044 2.044 0 0 1-.819-2.014l1.044-6.086-4.439-4.363a2.045 2.045 0 0 1-.521-2.112 2.047 2.047 0 0 1 1.663-1.4l6.11-.888 2.778-5.57c.35-.708 1.057-1.147 1.847-1.147s1.497.439 1.847 1.147l2.733 5.537 6.155.921a2.047 2.047 0 0 1 1.663 1.4 2.049 2.049 0 0 1-.521 2.112l-4.422 4.31 1.027 6.14a2.049 2.049 0 0 1-.819 2.014 2.07 2.07 0 0 1-1.211.395zM4.019 12.198l4.421 4.31c.485.474.707 1.154.593 1.822L7.99 24.417l.552.948-.466-.885 5.465-2.874a2.063 2.063 0 0 1 1.917-.001l5.466 2.875.086-.063-1.044-6.086a2.064 2.064 0 0 1 .592-1.823l4.422-4.31-.033-.103-6.11-.888a2.064 2.064 0 0 1-1.551-1.127l-2.733-5.537c-.008-.016-.017-.032-.054-.032l-2.787 5.569a2.06 2.06 0 0 1-1.549 1.127l-6.112.888-.731.818.699-.715z" fill="#000" class="color000000 svgShape"></path></svg>Star</a>
+													<a href="#">568</a>
+												</div>
+												<h6 class="mt-3">Thank you for sharing!</h6>
+												<a href="#" class="btn mb-0 text-white me-2"><i class="bi bi-twitter me-1"></i> Tweet</a>
+												<a href="#" class="btn text-white me-2"><i class="bi bi-facebook me-1"></i>Share</a>
+											</div>							
+										</div>
+									</div>
+								</nav>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-3">
+								<div class="card  p-3 border-rounded">
+									<div class="d-flex">
+										<div class="col-8">
+											<div class="cardbody">
+												<p class="m-0">TODAY'S MONEY</p>
+												<h5>$53,000</h5>
+											</div>
+											<div class="text m-0"><span>+55%</span> since yesterday</div>
+										</div>
+										<div class="col-4 d-flex justify-content-end">
+											<div class="card-box bg-1">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="Coins"><g data-name="Layer 2" fill="#fff" class="color000000 svgShape"><path d="M16.874,14.274C9.657,14.274,4,11.359,4,7.637S9.657,1,16.874,1,29.745,3.916,29.745,7.637,24.092,14.274,16.874,14.274ZM16.874,3C10.467,3,6,5.444,6,7.637s4.464,4.637,10.871,4.637S27.745,9.831,27.745,7.637,23.28,3,16.874,3Z" fill="#fff" class="color000000 svgShape"></path><path d="M16.876,18.23C9.66,18.23,4.006,15.316,4,11.594H4V7.637H6v3.954c0,2.194,4.466,4.64,10.874,4.64,6.289,0,10.708-2.355,10.869-4.518V7.637h2l0,3.954C29.75,15.314,24.1,18.23,16.876,18.23Z" fill="#fff" class="color000000 svgShape"></path><path d="M17.812,27.045c-6.808,0-12.326-2.621-12.833-6.1l1.979-.289c.31,2.118,4.746,4.385,10.855,4.385,6.408,0,10.874-2.445,10.874-4.64,0-1.114-1.107-2.255-3.038-3.132l.828-1.821c2.715,1.233,4.21,2.993,4.21,4.953C30.686,24.129,25.03,27.045,17.812,27.045Z" fill="#fff" class="color000000 svgShape"></path><path d="M17.812 31c-7.219 0-12.874-2.917-12.874-6.64V20.786h2V24.36C6.938 26.555 11.4 29 17.812 29a19.078 19.078 0 0 0 7.968-1.559c1.848-.87 2.906-1.992 2.906-3.081V20.406h2V24.36c0 1.922-1.438 3.659-4.052 4.889A21.09 21.09 0 0 1 17.812 31zM23.559 16.247v-1l-.594.353-.416.075a18.73 18.73 0 0 1-8.36 1.753c-6.408 0-10.874-2.445-10.874-4.64 0-.931.777-1.893 2.188-2.709l-1-1.731c-2.056 1.188-3.187 2.765-3.187 4.44 0 3.723 5.655 6.64 12.874 6.64a19.658 19.658 0 0 0 9.881-2.318l.479-.292v-.562z" fill="#fff" class="color000000 svgShape"></path><path d="M14.188,23.383c-7.219,0-12.874-2.917-12.874-6.64V12.789h2v3.955c0,2.194,4.466,4.64,10.874,4.64s10.873-2.445,10.873-4.64V15.175h2v1.568C27.062,20.466,21.407,23.383,14.188,23.383Z" fill="#fff" class="color000000 svgShape"></path></g></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div> 
+							<div class="col-12 col-sm-6 col-xl-3">
+								<div class="card  p-3 border-rounded">
+									<div class="d-flex">
+										<div class="col-8">
+											<div class="cardbody">
+												<p class="m-0">TODAY'S USERS</p>
+												<h5>2,300</h5>
+											</div>
+											<div class="text m-0"><span>+3%</span> since last week</div>
+										</div>
+										<div class="col-4 d-flex justify-content-end">
+											<div class="card-box bg-2">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="world"><path d="M256 48C141.124 48 48 141.125 48 256s93.124 208 208 208c114.875 0 208-93.125 208-208S370.875 48 256 48zm-21.549 384.999c-39.464-4.726-75.978-22.392-104.519-50.932C96.258 348.393 77.714 303.622 77.714 256c0-42.87 15.036-83.424 42.601-115.659.71 8.517 2.463 17.648 2.014 24.175-1.64 23.795-3.988 38.687 9.94 58.762 5.426 7.819 6.759 19.028 9.4 28.078 2.583 8.854 12.902 13.498 20.019 18.953 14.359 11.009 28.096 23.805 43.322 33.494 10.049 6.395 16.326 9.576 13.383 21.839-2.367 9.862-3.028 15.937-8.13 24.723-1.557 2.681 5.877 19.918 8.351 22.392 7.498 7.497 14.938 14.375 23.111 21.125 12.671 10.469-1.231 24.072-7.274 39.117zm147.616-50.932c-25.633 25.633-57.699 42.486-92.556 49.081 4.94-12.216 13.736-23.07 21.895-29.362 7.097-5.476 15.986-16.009 19.693-24.352 3.704-8.332 8.611-15.555 13.577-23.217 7.065-10.899-17.419-27.336-25.353-30.781-17.854-7.751-31.294-18.21-47.161-29.375-11.305-7.954-34.257 4.154-47.02-1.417-17.481-7.633-31.883-20.896-47.078-32.339-15.68-11.809-14.922-25.576-14.922-42.997 12.282.453 29.754-3.399 37.908 6.478 2.573 3.117 11.42 17.042 17.342 12.094 4.838-4.043-3.585-20.249-5.212-24.059-5.005-11.715 11.404-16.284 19.803-24.228 10.96-10.364 34.47-26.618 32.612-34.047s-23.524-28.477-36.249-25.193c-1.907.492-18.697 18.097-21.941 20.859.086-5.746.172-11.491.26-17.237.055-3.628-6.768-7.352-6.451-9.692.8-5.914 17.262-16.647 21.357-21.357-2.869-1.793-12.659-10.202-15.622-8.968-7.174 2.99-15.276 5.05-22.45 8.039 0-2.488-.302-4.825-.662-7.133a176.585 176.585 0 0 1 45.31-13.152l14.084 5.66 9.944 11.801 9.924 10.233 8.675 2.795 13.779-12.995L282 87.929V79.59c27.25 3.958 52.984 14.124 75.522 29.8-4.032.361-8.463.954-13.462 1.59-2.065-1.22-4.714-1.774-6.965-2.623 6.531 14.042 13.343 27.89 20.264 41.746 7.393 14.801 23.793 30.677 26.673 46.301 3.394 18.416 1.039 35.144 2.896 56.811 1.788 20.865 23.524 44.572 23.524 44.572s10.037 3.419 18.384 2.228c-7.781 30.783-23.733 59.014-46.769 82.052z" fill="#fff" class="color000000 svgShape"></path></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-3">
+								<div class="card  p-3 border-rounded">
+									<div class="d-flex">
+										<div class="col-8">
+											<div class="cardbody">
+												<p class="m-0">NEW CLIENTS</p>
+												<h5>+3,462</h5>
+											</div>
+											<div class="text m-0"><span class="text-danger">-2%</span> since last quarter</div>
+										</div>
+										<div class="col-4 d-flex justify-content-end">
+											<div class="card-box bg-3">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="Finance"><path d="M82 5H25c-5.5 0-10 4.5-10 10v66h-4c-1.1 0-2 .9-2 2v2c0 5.5 4.5 10 10 10h49c5 0 9-4 9-9V23h12c1.1 0 2-.9 2-2v-7c0-5-4-9-9-9zM13 85h46v1c0 1.8.6 3.6 1.5 5H19c-3.3 0-6-2.7-6-6zm60 1c0 2.8-2.2 5-5 5s-5-2.2-5-5v-3c0-1.1-.9-2-2-2H19V15c0-3.3 2.7-6 6-6h49.5c-1 1.4-1.5 3.2-1.5 5v72zm4-72c0-2.8 2.2-5 5-5s5 2.2 5 5v5H77v-5zM43 73c0 1.1-.9 2-2 2H27c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2zm24 0c0 1.1-.9 2-2 2H51c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2zM43 63c0 1.1-.9 2-2 2H27c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2zm24 0c0 1.1-.9 2-2 2H51c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2zM43 53c0 1.1-.9 2-2 2H27c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2zm24 0c0 1.1-.9 2-2 2H51c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2zM43 43c0 1.1-.9 2-2 2H27c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2zm24 0c0 1.1-.9 2-2 2H51c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2zM52.7 27H61c1.1 0 2-.9 2-2s-.9-2-2-2h-8.3c-.9-2.9-3.5-5-6.7-5s-5.8 2.1-6.7 5H31c-1.1 0-2 .9-2 2s.9 2 2 2h8.3c.9 2.9 3.5 5 6.7 5s5.8-2.1 6.7-5zM46 28c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z" fill="#fff" class="color000000 svgShape"></path></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-xl-3">
+								<div class="card  p-3 border-rounded">
+									<div class="d-flex">
+										<div class="col-8">
+											<div class="cardbody">
+												<p class="m-0">SALES</p>
+												<h5>$103,430</h5>
+											</div>
+											<div class="text m-0"><span>+5%</span> than last month</div>
+										</div>
+										<div class="col-4 d-flex justify-content-end">
+											<div class="card-box bg-4">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="Cart"><path d="M14 36c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4zM2 4v4h4l7.19 15.17-2.7 4.9c-.31.58-.49 1.23-.49 1.93 0 2.21 1.79 4 4 4h24v-4H14.85c-.28 0-.5-.22-.5-.5 0-.09.02-.17.06-.24L16.2 26h14.9c1.5 0 2.81-.83 3.5-2.06l7.15-12.98c.16-.28.25-.61.25-.96a2 2 0 0 0-2-2H10.43l-1.9-4H2zm32 32c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4z" fill="#fff" class="color000000 svgShape"></path><path fill="none" d="M0 0h48v48H0z"></path></svg>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-7">
+								<div class="card sales chart  mt-3">
+									<div class="p-3 pb-0">
+										<h6>Sales Overview</h6>
+										<p><i class="bi bi-arrow-up te"></i><strong> 4% more</strong> in 2021</p>
+									</div>
+									<div id="chart" class="p-3"></div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-5">
+								<div class="card carousel  mt-3">
+									<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item position-relative active w-100" data-bs-interval="10000">
+												<img src="images/carousel-1.jpg" class="d-block" alt="banner-slider1">
+												<div class="carousel-contain position-absolute text-white">
+													<div class="categories-box me-3 text-black bg-white mb-4">
+														<i class="bi bi-camera-fill"></i>
+													</div>
+													<h5 class="fw-bolder">Get started with Argon</h5>
+													<p>There’s nothing I really wanted to do in <br> life that I wasn’t able to get good at.</p>
+												</div>
+											</div>
+											<div class="carousel-item position-relative" data-bs-interval="2000">
+												<img src="images/carousel-2.jpg" class="d-block" alt="banner-slider2">
+												<div class="carousel-contain position-absolute text-white">
+													<div class="categories-box me-3 text-black bg-white mb-4">
+														<i class="bi bi-balloon-fill"></i>
+													</div>
+													<h5 class="fw-bolder">Faster way to create <br> web pages</h5>
+													<p>That’s my skill. I’m not really specifically <br> talented at anything except for the <br> ability to learn.</p>
+												</div>
+											</div>
+											<div class="carousel-item position-relative">
+												<img src="images/carousel-3.jpg" class="d-block" alt="banner-slider3">
+												<div class="carousel-contain position-absolute text-white">
+													<div class="categories-box me-3 text-black bg-white mb-4">
+														<i class="bi bi-trophy-fill"></i>
+													</div>
+													<h5 class="fw-bolder">Share with us your design tips!</h5>
+													<p>Don’t be afraid to be wrong because <br> you can’t learn anything from a <br> compliment.</p>
+												</div>
+											</div>
+										</div>
+										<button class="carousel-control-prev position-absolute" type="button"
+											data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon position-absolute" aria-hidden="true"></span>
+										</button>
+										<button class="carousel-control-next" type="button"
+											data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+											<span class="carousel-control-next-icon position-absolute" aria-hidden="true"></span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-lg-7">
+								<div class="card sales  mt-3">
+									<div class="p-3 pb-0">
+										<h6>Sales by Country</h6>
+									</div>
+									<table class="table">
+									<!-- <thead> -->
+										<!-- <tr> -->
+											<!-- <th scope="col">#</th> -->
+											<!-- <th scope="col">First</th> -->
+											<!-- <th scope="col">Last</th> -->
+											<!-- <th scope="col">Handle</th> -->
+											<!-- <th scope="col">name</th> -->
+										<!-- </tr> -->
+									<!-- </thead> -->
+									<tbody>
+										<tr class="contain">									
+											<td class="d-flex">
+												<div class="table-img me-4">
+													<img src="images/US.png" class="img-fluid"></img>
+												</div>
+												<div class="table-contant">
+													<p>Country:</p>
+													<h6>United Sate</h6>
+												</div>
+											</td>
+											<td class="w-25">
+												<p>Sales:</p>
+												<h6>2500</h6>
+											</td>
+											<td class="w-25">
+												<p>Value:</p>
+												<h6>$230,900</h6>
+											</td>
+											<td>
+												<p>Bounce:</p>
+												<h6>29.9%<h6>
+											</td>
+										</tr>
+										<tr class="contain">
+											<td class="d-flex">
+												<div class="table-img me-4">
+													<img src="images/DE.png"></img>
+												</div>
+												<div class="table-contant">
+													<p>Country:</p>
+												<h6>Germany</h6>
+												</div>
+											</td>
+											<td>
+												<p>Sales:</p>
+												<h6>3.900</h6>
+											</td>
+											<td>
+												<p>Value:</p>
+												<h6>$440,000</h6>
+											</td>
+											<td>
+												<p>Bounce:</p>
+												<h6>40.22%</h6>
+											</td>
+										</tr>
+										<tr class="contain">
+											<td class="d-flex">
+												<div class="table-img me-4">
+													<img src="images/GB.png"></img>
+												</div>
+												<div class="table-contant">
+													<p>Country:</p>
+													<h6>Great Britain</h6>
+												</div>
+											</td>
+											<td>
+												<p>Sales:</p>
+												<h6>1.400</h6>
+											</td>
+											<td>
+												<p>Value:</p>
+												<h6>$190,700</h6>
+											</td>
+											<td>
+												<p>Bounce:</p>
+												<h6>23.44%</h6>
+											</td>
+										</tr>
+										<tr class="contain">
+											<td class="d-flex">
+												<div class="table-img me-4">
+													<img src="images/BR.png"></img>
+												</div>
+												<div class="table-contant">
+													<p>Country:</p>
+													<h6>Brasil</h6>
+												</div>
+											</td>
+											<td>
+												<p>Sales:</p>
+												<h6>562</h6>
+											</td>
+											<td>
+												<p>Value:</p>
+												<h6>$143,960</h6>
+											</td>
+											<td>
+												<p>Bounce:</p>
+												<h6>32.14%</h6>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</div>
+							<div class="col-12 col-lg-5">
+								<div class="card categories  mt-3">
+									<div class="p-3 pb-0">
+										<h6>Categories</h6>
+									</div>
+									<ol class="p-4 mb-0">
+										<li class="list-group-item d-flex justify-content-between align-items-start py-2 pe-3 mb-2">
+											<div class="categories-box me-3 text-white">
+												<i class="bi bi-phone-fill"></i>
+											</div>
+											<div class="categories-text ms-2 me-auto">
+												<h6 class="mb-1">Devices</h6>
+												<p>250 in stock, 346+ sold</p>
+											</div>
+											<a href="#">
+												<i class="bi bi-arrow-right"></i>
+											</a>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-start py-2 pe-3 mb-2">
+											<div class="categories-box me-3 text-white">
+												<i class="bi bi-tag-fill"></i>
+											</div>
+											<div class="categories-text ms-2 me-auto">
+												<h6 class="mb-1">Tickets</h6>
+												<p> 123 closed, 15 open</p>
+											</div>
+											<a href="#">
+												<i class="bi bi-arrow-right"></i>
+											</a>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-start py-2 pe-3 mb-2">
+											<div class="categories-box me-3 text-white">
+												<i class="bi bi-box2-fill"></i>
+											</div>
+											<div class="categories-text ms-2 me-auto">
+												<h6 class="mb-1">Error logs</h6>
+												<p>1 is active, 40 closed</p>
+											</div>
+											<a href="#">
+												<i class="bi bi-arrow-right"></i>
+											</a>
+										</li>
+										<li class="list-group-item d-flex justify-content-between align-items-start  py-2 pe-3">
+											<div class="categories-box me-3 text-white">
+												<i class="bi bi-emoji-smile-fill"></i>
+											</div>
+											<div class="categories-text ms-2 me-auto">
+												<h6 class="mb-1">Happy users</h6>
+												<p>+ 430</p>	
+											</div>
+											<a href="#">
+												<i class="bi bi-arrow-right"></i>
+											</a>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<!-- foot -->
+							<div class="col-12 d-flex justify-content-between pt-4 px-4">
+								<div class="foot">
+									<h6 class="mb-0">© 2023, made with <i class="bi bi-suit-heart-fill"></i> by <strong>Creative Tim</strong> for a better web.</h6>
+								</div>
+								<div class="foot-list">
+									<nav>
+										<ul class="list-unstyled d-flex">
+											<li>
+												<a href="#">
+													<span>Creative Tim</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>About Us</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>Blog</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span>License</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			 </div> <!--back-div -->
+		</div>
+		</div>
+	
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/apexcharts.js"></script>
+		<script src="js/jquery-3.6.4.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			var options = {
+				chart: {
+					height: 300,
+					type: "area"
+				},
+				dataLabels: {
+					enabled: false
+				},
+				series: [
+					{
+					  name: "Series 1",
+					  data: [50, 40, 300, 220, 500, 250,400,230,500]
+					}
+				],
+				stroke: {
+					show: true,
+					curve: 'smooth',
+					lineCap: 'butt',
+					colors: ['#5e72e4'],
+					width: 3,
+					dashArray: 0,      
+				},
+				fill: {
+					colors: ['#5e72e4'],
+					type: "gradient",
+					gradient: {
+						shadeIntensity: 1,
+						opacityFrom: 0.4,
+						opacityTo: 0.6,
+						stops: [0, 80, 100]
+					}
+				},
+				grid: {
+					show: true,
+					borderColor: '#90A4AE',
+					strokeDashArray: 5,
+					position: 'back',
+				},
+				markers: {
+					size: 0,
+					colors: 'transparent',
+					strokeColors: '#5e72e4',
+					strokeWidth: 2,
+					strokeOpacity: 0.9,
+					strokeDashArray: 0,
+					fillOpacity: 1,
+					discrete: [],
+					shape: "circle",
+					radius: 2,
+					offsetX: 0,
+					offsetY: 0,
+					onClick: undefined,
+					onDblClick: undefined,
+					showNullDataPoints: true,
+					hover: {
+						size: undefined,
+						sizeOffset: 4
+					}
+				},
+				xaxis:{
+					categories: ["Apr","May","Jun","jul","Aug","Sep","Oct","Nov","Dec"]
+					},
+				};
+				
+
+				var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+				chart.render();
+		</script>
+		<script>
+			$(window).ready(function(){
+				$(".sidenav-switch a").on('click',function(){
+					var path = $(this).data('path');
+					$('#caseswithcer').attr('href',path);
+				})
+			});
+			 $(function () {
+				$('[data-toggle="popover"]').popover();
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+		</script>
+	</body>
+</html>	
